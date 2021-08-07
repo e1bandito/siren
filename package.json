@@ -60,6 +60,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
-    "gulp-gh-pages": "^0.5.4"
+    "gulp-gh-pages": "^0.5.4",
+    "svgxuse": "^1.2.6"
   }
 }

@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #E0E0E0;
+
+  @include min($lg) {
+    padding: 20px;
+  }
+}
+
+.header__logo {
+  & svg {
+    display: block;
+
+    @include min($lg) {
+      width: 168px;
+      height: 56px;
+    }
+  }
+}
