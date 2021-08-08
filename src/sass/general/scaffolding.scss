@@ -1,5 +1,6 @@
 @include font("Montserrat", montserrat-regular, 400);
 @include font("Montserrat", montserrat-medium, 500);
+@include font("Montserrat", montserrat-semibold, 600);
 @include font("Montserrat", montserrat-bold, 700);
 
 html {
@@ -16,9 +17,9 @@ html {
 body {
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.2;
-  background-color: #fcfcfc;
+  color: $black;
 }
 
 img {
@@ -47,8 +48,8 @@ a {
   border: 0;
 }
 
-.container {
-  max-width: 1380px;
+.wrapper {
+  max-width: 1310px;
   width: 100%;
   margin: 0 auto;
   padding-left: 100px;

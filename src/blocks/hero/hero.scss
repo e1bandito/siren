@@ -1,0 +1,65 @@
+$grid-gutter-width: 30px;
+
+.hero {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.hero__text {
+  margin: 0 0 25px 0;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  color: $black;
+
+  @include min($lg) {
+    font-size: 45px;
+    line-height: 60px;
+    margin-bottom: 50px;
+  }
+}
+
+.hero__accent {
+  font-weight: 700;
+  color: $primary;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  @include min($lg) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+.hero__featuresCard {
+  height: 100%;
+  border-radius: 8px;
+  padding: 20px 16px;
+  background-color: $bg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__featuresIcon {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17px;
+  color: $primary;
+}
+
+.hero__featuresText {
+  text-align: center;
+  line-height: 21px;
+  margin: 0;
+
+  @include min($lg) {
+    font-size: 20px;
+    line-height: 28px;
+
+    & br {
+      display: none;
+    }
+  }
+}

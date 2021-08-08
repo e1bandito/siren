@@ -1,4 +1,4 @@
-.header {
+.mainHeader {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,7 +10,7 @@
   }
 }
 
-.header__logo {
+.mainHeader__logo {
   & svg {
     display: block;
 

@@ -1,0 +1,15 @@
+- let heroFeatures = getData('heroFeatures');
+
++b.SECTION.hero
+  +e.wrapper.wrapper
+    .container-fluid
+      h1.visually-hidden Partner Company
+      +e.P.text How over <span class="hero__accent">410,000 americans</span> increased their property value <span class="hero__accent">in under 6 hours*</span> with this simple upgrade.
+      +e.featuresList
+        .row.no-gutters
+          each card in heroFeatures
+            +e.featuresItem.col-6.col-lg-3(class= card.classes)
+              +e.featuresCard
+                +e.featuresIcon
+                  +icon(card.icon)(width= card.iconWidth, height= card.iconHeight)
+                +e.P.featuresText !{card.text}
