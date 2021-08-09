@@ -8,8 +8,8 @@ mixin picture(options)
   picture
     if res.mq
       each mq, index in res.mq
-        source(type="image/webp" media="(min-width: " + mq.value + "px)", srcset="img/" + mq.img + "@2x.webp 2x,  img/" + mq.img + ".webp 1x")/
-        source( media="(min-width: " + mq.value + "px)", srcset="img/" + mq.img + "@2x." + res.type + " 2x,  img/" + mq.img + "." + res.type + " 1x")/
+        source(type="image/webp" media="(max-width: " + mq.value + "px)", srcset="img/" + mq.img + "@2x.webp 2x,  img/" + mq.img + ".webp 1x")/
+        source( media="(max-width: " + mq.value + "px)", srcset="img/" + mq.img + "@2x." + res.type + " 2x,  img/" + mq.img + "." + res.type + " 1x")/
 
     source(type="image/webp" srcset="img/" + res.img + "@2x.webp 2x,  img/" + res.img + ".webp 1x")/
     source(srcset="img/" + res.img + "@2x." + res.type + " 2x,  img/" + res.img + "." + res.type + " 1x")/
