@@ -1,0 +1,16 @@
+- let footerNav = ['Privacy Policy', 'Contact us', 'Unsubscribe', 'Do not sell my personal information']
+
++b.FOOTER.mainFooter
+  +e.contaiener.container
+    .d-flex.flex-column.align-items-center.flex-lg-row.justify-content-between
+      .mb-25.mb-lg-0
+        +e.logo.d-flex.justify-content-center
+          +icon('footer-logo')(width="168", height="56")
+      +e.NAV.nav.mb-25.mb-lg-0.flex-lg-grow-1.w-50
+        +e.UL.navList.d-flex.flex-column.align-items-center.flex-lg-row.justify-content-between.align-items-lg-baseline
+          each item in footerNav
+            +e.LI.navItem
+              +e.A.navLink(href="#") #{item}
+      +e.copy.d-lg-flex.flex-column
+        +e.SPAN.copyText &copy; 2020 Partner.
+        +e.SPAN.copyText  All Rights Reserved.

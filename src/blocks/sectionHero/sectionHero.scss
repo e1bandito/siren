@@ -1,11 +1,13 @@
-$grid-gutter-width: 30px;
-
-.hero {
+.sectionHero {
   padding-top: 25px;
   padding-bottom: 35px;
+
+  @include min($lg) {
+    padding-top: 50px;
+  }
 }
 
-.hero__text {
+.sectionHero__text {
   margin: 0 0 25px 0;
   font-size: 22px;
   line-height: 26px;
@@ -19,7 +21,7 @@ $grid-gutter-width: 30px;
   }
 }
 
-.hero__accent {
+.sectionHero__accent {
   font-weight: 700;
   color: $primary;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
@@ -30,7 +32,7 @@ $grid-gutter-width: 30px;
   }
 }
 
-.hero__featuresCard {
+.sectionHero__featuresCard {
   height: 100%;
   border-radius: 8px;
   padding: 20px 16px;
@@ -38,9 +40,13 @@ $grid-gutter-width: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include min($lg) {
+    padding: 30px 18px;
+  }
 }
 
-.hero__featuresIcon {
+.sectionHero__featuresIcon {
   min-height: 56px;
   display: flex;
   align-items: center;
@@ -49,7 +55,7 @@ $grid-gutter-width: 30px;
   color: $primary;
 }
 
-.hero__featuresText {
+.sectionHero__featuresText {
   text-align: center;
   line-height: 21px;
   margin: 0;

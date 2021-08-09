@@ -4,27 +4,27 @@
     "iconWidth": "60",
     "iconHeight": "50",
     "text": "Lifetime warranty with 100% no-clog guarantee",
-    "classes": "pr-2 pr-lg-4 mb-2 mg-lg-0 order-lg-1"
+    "classes": "px-8 px-lg-20 mb-2 mb-lg-0 order-lg-1"
   },
   {
     "icon": "money",
     "iconWidth": "56",
     "iconHeight": "51",
     "text": "Installs over existing gutters saving you thousands",
-    "classes": "pr-lg-4 mb-2 mb-lg-0 order-lg-3"
+    "classes": "px-8 px-lg-20 mb-2 mb-lg-0 order-lg-3"
   },
   {
     "icon": "home",
     "iconWidth": "60",
     "iconHeight": "45",
     "text": "Fits <br> every home",
-    "classes": "pr-2 pr-lg-4 order-lg-2"
+    "classes": "px-8 px-lg-20 order-lg-2"
   },
   {
     "icon": "handshake",
     "iconWidth": "60",
     "iconHeight": "40",
     "text": "Rating <br> customer rating",
-    "classes": "order-lg-4"
+    "classes": "px-8 px-lg-20 order-lg-4"
   }
 ]

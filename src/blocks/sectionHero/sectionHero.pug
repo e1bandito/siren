@@ -1,12 +1,11 @@
 - let heroFeatures = getData('heroFeatures');
 
-+b.SECTION.hero
-  +e.wrapper.wrapper
-    .container-fluid
++b.SECTION.sectionHero
+    .container
       h1.visually-hidden Partner Company
-      +e.P.text How over <span class="hero__accent">410,000 americans</span> increased their property value <span class="hero__accent">in under 6 hours*</span> with this simple upgrade.
+      +e.P.text How over <span class="sectionHero__accent">410,000 americans</span> increased their property value <span class="sectionHero__accent">in under 6 hours*</span> with this simple upgrade.
       +e.featuresList
-        .row.no-gutters
+        .row.no-gutters.mx-n8.mx-lg-n20
           each card in heroFeatures
             +e.featuresItem.col-6.col-lg-3(class= card.classes)
               +e.featuresCard

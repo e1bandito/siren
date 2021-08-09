@@ -1,0 +1,55 @@
+.mainFooter {
+  background-color: $primary;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: $white;
+}
+
+.mainFooter__logo {
+  & svg {
+    display: block;
+  }
+}
+
+.mainFooter__navList {
+  @include lsr;
+
+  @include min($lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include min($xl) {
+    padding-left: 107px;
+    padding-right: 107px;
+  }
+}
+
+.mainFooter__navItem {
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @include min($lg) {
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mainFooter__navLink {
+  text-decoration: underline;
+  color: $white;
+  font-size: 14px;
+  line-height: 17px;
+  transition: opacity 0.3s linear;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.mainFooter__copy {
+  font-size: 12px;
+  line-height: 18px;
+}
