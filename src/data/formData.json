@@ -1,0 +1,27 @@
+[
+  {
+    "name": "footage",
+    "value": 1000,
+    "id": "footage-radio-1"
+  },
+  {
+    "name": "footage",
+    "value": 1500,
+    "id": "footage-radio-2"
+  },
+  {
+    "name": "footage",
+    "value": 2000,
+    "id": "footage-radio-3"
+  },
+  {
+    "name": "footage",
+    "value": 2500,
+    "id": "footage-radio-4"
+  },
+  {
+    "name": "footage",
+    "value": 3000,
+    "id": "footage-radio-5"
+  }
+]

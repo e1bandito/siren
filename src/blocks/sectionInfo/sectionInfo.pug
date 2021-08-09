@@ -6,10 +6,10 @@
     +e.UL.list
       each card in infoData
         +e.LI.item(class=card.itemClasses)
-          +e.card.d-lg-flex.container-lg.align-items-center(class=card.cardClasses)
-            +e.cardWrapper.col-lg-6
-              +e.H2.cardTitle #{card.title}
-              +e.P.cardText #{card.text}
-            +e.cardImg.col-lg-6
-              +picture({img: card.img, alt: card.alt, type: 'jpg', width: 345, height: 194, mq: [{value: 992, img: card.mobileImg}]})
+          +e.card.d-lg-flex.align-items-center.row(class=card.cardClasses)
+              +e.cardWrapper.col-lg-6
+                +e.H2.cardTitle #{card.title}
+                +e.P.cardText #{card.text}
+              +e.cardImg.col-lg-6
+                +picture({img: card.img, alt: card.alt, type: 'jpg', width: 345, height: 194, mq: [{value: 992, img: card.mobileImg}]})
 

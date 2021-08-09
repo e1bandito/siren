@@ -1,0 +1,40 @@
+.radioInput {
+  width: 100%;
+
+  @include min($xl) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.radioInput__label {
+  width: 100%;
+  display: inline-block;
+  background: rgba(255, 149, 1, 0.15);
+  border: 1px solid $secondary;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  transition: color 0.3s linear, border-color 0.3s linear, background-color 0.3s linear;
+
+  &:hover {
+    color: $primary;
+    border-color: $primary;
+  }
+
+  @include min($lg) {
+    font-size: 23px;
+    line-height: 28px;
+    padding: 10px;
+  }
+}
+
+.radioInput__field:checked + .radioInput__label {
+  background-color: $primary;
+  color: $white;
+  border-color: $primary;
+}
