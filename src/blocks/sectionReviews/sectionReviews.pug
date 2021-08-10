@@ -1,0 +1,15 @@
+- const reviewsData = getData('reviewsData');
+
++b.SECTION.sectionReviews.section
+  +e.container.container
+    +e.H2.title What Makes Us&nbsp;America&rsquo;s #1 Rated Gutter Company
+    +e.slider.js-reviews-slider
+      +e.wrapper.js-wrapper
+        each card in reviewsData
+          +e.slide.js-slide
+            +card(card.img, card.name, card.position, card.text, card.rating)
+      +e.pagination.js-pagination
+    +e.BUTTON.sliderBtn._prev(aria-label="prev")
+      +icon('left')(width="17", height="35")
+    +e.BUTTON.sliderBtn._next(aria-label="next")
+      +icon('right')(width="17", height="35")

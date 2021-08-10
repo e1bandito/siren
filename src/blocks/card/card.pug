@@ -1,0 +1,13 @@
+mixin card(img, name, position, text, rating)
+  +b.ARTICLE.card
+    +e.image
+      +picture({img: img, alt: name, type: 'png', width: 70, height: 70})
+    +e.P.name !{name}
+    +e.P.position !{position}
+    +e.rating
+      - let i = 0;
+      while i < rating
+        - i++
+        +e.star
+          +icon('rating-star')(width="24", height="23")
+    +e.P.text !{text}

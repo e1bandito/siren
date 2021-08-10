@@ -61,6 +61,8 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "gulp-gh-pages": "^0.5.4",
-    "svgxuse": "^1.2.6"
+    "svgxuse": "^1.2.6",
+    "swiper": "^4.5.1",
+    "tiny-slider": "^2.9.3"
   }
 }

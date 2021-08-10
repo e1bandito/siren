@@ -48,20 +48,12 @@ a {
   border: 0;
 }
 
-.wrapper {
-  max-width: 1310px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 100px;
-  padding-right: 100px;
+.section {
+  padding-top: 35px;
+  padding-bottom: 35px;
 
-  @include max($xl) {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  @include max($md) {
-    padding-left: 15px;
-    padding-right: 15px;
+  @include min($lg) {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }

@@ -34,8 +34,14 @@ let webpackConf = {
     rules: [
       {
         test: /\.js$/,
-        loader: "babel-loader",
-        exclude: "/node_modules/",
+        exclude: /node_modules\/(?!(swiper|dom7)\/).*/,
+        use: [{
+          loader: 'babel-loader',
+          options: {
+            cacheDirectory: true,
+            rootMode: 'upward'
+          }
+        }]
       },
     ],
   },

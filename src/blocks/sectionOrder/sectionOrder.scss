@@ -1,12 +1,5 @@
 .sectionOrder {
-  padding-top: 35px;
-  padding-bottom: 35px;
   background-color: $primary;
-
-  @include min($lg) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 }
 
 .sectionOrder__title {

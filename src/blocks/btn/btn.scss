@@ -16,6 +16,7 @@
   font-weight: 600;
   box-shadow: 0 -5px #CA7600 inset;
   cursor: pointer;
+  transition: all 0.3s linear;
 
   &:hover {
     box-shadow: 0 -2px #CA7600 inset;
