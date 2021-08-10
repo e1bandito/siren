@@ -8,13 +8,6 @@
 
 .sectionInfo__cardTitle {
   margin: 0 0 15px 0;
-  font-size: 20px;
-  line-height: 26px;
-
-  @include min($lg) {
-    font-size: 27px;
-    line-height: 36px;
-  }
 }
 
 .sectionInfo__cardText {

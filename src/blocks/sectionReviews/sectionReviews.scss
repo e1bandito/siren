@@ -1,3 +1,7 @@
+.sectionReviews {
+  padding-bottom: 0;
+}
+
 .sectionReviews__container {
   position: relative;
 }
@@ -24,7 +28,7 @@
 .sectionReviews__pagination {
   display: flex;
   justify-content: center;
-  padding-top: 14px;
+  padding-top: 12px;
   padding-bottom: 14px;
 
   @include min($lg) {
@@ -42,7 +46,7 @@
   background: $white;
   border: 1px solid transparent;
   cursor: pointer;
-  margin: 0 2px;
+  margin: 0 1px;
 
   &::before {
     content: "";
@@ -62,20 +66,13 @@
 }
 
 .sectionReviews__title {
-  font-size: 20px;
-  line-height: 26px;
-  margin: 0 0 20px 0;
   text-align: center;
-
-  @include min($lg) {
-    margin-bottom: 25px;
-  }
 }
 
 .sectionReviews__sliderBtn {
   display: none;
   position: absolute;
-  top: 41%;
+  top: 43%;
   border: none;
   background-color: transparent;
   color: rgba($black, 0.3);
@@ -83,18 +80,18 @@
   transition: color 0.3s linear;
 
   &_prev {
-    left: -26px;
+    left: -36px;
   }
 
   &_next {
-    right: -26px;
+    right: -36px;
   }
 
   &:hover {
     color: $primary;
   }
 
-  @include min($lg) {
+  @include min($xl) {
     display: block;
   }
 

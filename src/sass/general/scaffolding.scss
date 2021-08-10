@@ -57,3 +57,15 @@ a {
     padding-bottom: 60px;
   }
 }
+
+.title {
+  font-size: 20px;
+  line-height: 26px;
+  margin: 0 0 20px 0;
+
+  @include min($lg) {
+    font-size: 27px;
+    line-height: 36px;
+    margin-bottom: 25px;
+  }
+}

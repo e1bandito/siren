@@ -3,7 +3,7 @@ mixin card(img, name, position, text, rating)
     +e.image
       +picture({img: img, alt: name, type: 'png', width: 70, height: 70})
     +e.P.name !{name}
-    +e.P.position !{position}
+    +e.H3.position !{position}
     +e.rating
       - let i = 0;
       while i < rating

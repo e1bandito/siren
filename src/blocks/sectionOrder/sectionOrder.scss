@@ -4,14 +4,10 @@
 
 .sectionOrder__title {
   margin: 0 0 20px 0;
-  font-size: 20px;
-  line-height: 26px;
   text-align: center;
   color: $white;
 
   @include min($lg) {
-    font-size: 27px;
-    line-height: 36px;
     margin-bottom: 25px;
   }
 }
@@ -28,19 +24,19 @@
 
 .sectionOrder__formTitle {
   margin: 0 0 11px 0;
-  font-size: 20px;
-  line-height: 26px;
   text-align: center;
 
   @include min($lg) {
-    font-size: 27px;
-    line-height: 36px;
     margin-bottom: 30px;
   }
 }
 
 .sectionOrder__formImg {
   margin-bottom: 11px;
+
+  @include min($lg) {
+    margin-bottom: 28px;
+  }
 
   & img {
     display: block;

@@ -27,7 +27,7 @@
 
 .mainFooter__navItem {
   &:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
   }
 
   @include min($lg) {
